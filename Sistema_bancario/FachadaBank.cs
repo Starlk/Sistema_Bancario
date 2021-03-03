@@ -9,6 +9,7 @@ namespace Sistema_bancario
         cuenta_de_horro ch;
         prestamos p;
         CertificadoFinancierocs cf;
+        Menus m;
         public FachadaBank(int num)
         {
             opcion = num;
@@ -29,11 +30,11 @@ namespace Sistema_bancario
             }
         }
         private int opcion;
-        Menus m = new Menus();
+       
 
         public void inicioEscritorio()
         {
-            Menus m = new Menus();
+             m = new Menus();
             Console.Clear();
             Console.WriteLine("-------------Version de escritorio de BankStarko-------------");
             Console.WriteLine("-------------------------------------------------");

@@ -7,10 +7,14 @@ namespace Sistema_bancario
     class Menus
     {
         validarNumeros numero, opcion;
+        CertificadoFinancierocs cf;
+        TarjetaCredito tc;
+        prestamos p;
+        ITarger cuenta;
         public void MenuAhorro()
         {
             numero = new validarNumeros();   
-            ITarger cuenta;
+            
 
             Console.WriteLine("-----------------Bienvenidos a bankStark---------------------");
 
@@ -80,7 +84,7 @@ namespace Sistema_bancario
             Console.WriteLine("[3]-salir");
             opcion = new validarNumeros();
             int num = opcion.getNumero(" Digite el numero de la opcion ");
-            prestamos p = new prestamos(); 
+            p = new prestamos(); 
             switch (num)
             {
                 case 1:
@@ -105,7 +109,7 @@ namespace Sistema_bancario
             Console.WriteLine("[2]-----------Consumos");
             Console.WriteLine("[3]-----------Pagos");
             Console.WriteLine("[4]----------Desea salir ");
-            TarjetaCredito tc = new TarjetaCredito();
+            tc = new TarjetaCredito();
             opcion = new validarNumeros();
             int nume = opcion.getNumero(" ---Ingrese la opcion ");
             switch (nume)
@@ -134,7 +138,7 @@ namespace Sistema_bancario
             Console.WriteLine("[1] --------- Apertura ");
             Console.WriteLine("[2]-----------Consulta de interes ");
             Console.WriteLine("[3]-Salir");
-            CertificadoFinancierocs cf = new CertificadoFinancierocs();
+            cf = new CertificadoFinancierocs();
             opcion = new validarNumeros();
             int nume = opcion.getNumero(" ---Ingrese la opcion ");
             switch (nume)
